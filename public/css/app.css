@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9926,6 +9927,68 @@ h3 {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
+  }
+}
+body header nav {
+  background-color: black;
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+}
+body header nav div div a {
+  color: white;
+}
+body header .carousel {
+  position: relative;
+}
+body header .carousel ol:first-of-type li {
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: white;
+  padding: 4px;
+}
+body header .carousel .text_header {
+  position: absolute;
+}
+body header .carousel .text_header h1 {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  color: white;
+}
+body header .carousel .text_header h1 .coloré {
+  color: #b12736;
+}
+body header .carousel .text_header .button_header {
+  display: flex;
+  justify-content: center;
+}
+body header .carousel .text_header .button_header button:first-of-type {
+  background-color: white;
+  border: 1px solid white;
+}
+body header .carousel .text_header .button_header button:nth-of-type(2) {
+  background-color: #b12736;
+  border: 1px solid #b12736;
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .carousel .text_header {
+    width: 100%;
+    background-color: black;
+    margin: auto;
+  }
+  .carousel .text_header .button_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel .text_header .button_header button {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 15px;
   }
 }
 /*!
