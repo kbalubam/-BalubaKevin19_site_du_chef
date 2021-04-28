@@ -10,28 +10,76 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top:5%;
+        margin-bottom: 5%;
+        padding: 10%;
+        position: relative;
+        .coinrougeleftdown{
+            position: absolute;
+            bottom:0;
+            left: 0;
+        }
+        .coinrougerightdown{
+            position: absolute;
+            bottom:0;
+            right: 0;
+            
+        }
+        .coinrougeleftup{
+            position: absolute;
+            top:0;
+            left: 0;
+            transform: rotateZ(90deg);
+        }
+        .coinrougerightup{
+            position: absolute;
+            top:0;
+            right: 0;
+            transform: rotateZ(-90deg);
+        }
+        
         
         h1{
-            
+            font-family: 'Courgette', cursive;
+            margin-top:10%;
+            span{
+                font-weight: bold;
+                color: rgba(177,39,54,255);
+            }
         }
         p{
             text-align: center;
             width: 50%;
+            margin-top:10%;
         }
         .menu_onglet{
             ul{
                 width: 20%;
+                font-family: 'Courgette', cursive;
+                border-right: 1px solid grey;
+                
+                
+                
                 li{
                     display: flex;
                     align-items: center;
+                    border-bottom: 1px solid grey;
+                   
+                
+                
+                    
                     a{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        color: black;
+                    
+                        
                         
                         
                         i{
                             font-size: 40px;
+                            color: grey;
                         }
                     }
                 }
@@ -40,9 +88,13 @@
             .tab-content{
                 // width: 80%;
                 // padding-left:10px;
-                // padding-right: 10px;    
+                // padding-right: 10px;  
+                margin-top:5%;
+                
                 
                 .tab-pane{
+                    
+                    
                     .row{
                         margin-bottom:10px;
                         padding-bottom: 5px;
@@ -70,9 +122,7 @@
                                 }
                             }
                             p{
-                                span{
-                                    font-weight: bold;
-                                }
+                                
                             }
                             .prix{
                                 background-color: grey;

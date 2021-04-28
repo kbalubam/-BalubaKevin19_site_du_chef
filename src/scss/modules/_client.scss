@@ -14,6 +14,7 @@
         h1{
             color: white;
             font-family: 'Courgette', cursive;
+            margin-top:10%;
             span{
                 
                 color:rgba(177,39,54,255);
@@ -24,14 +25,22 @@
         display: flex;
         width: 80%;
         margin-top:50px;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        
+        
         .first_photo{
+            
             img{
                 border-radius: 50%;
+                
+                
             }
         }
         .first_presentation{
             border: 1px solid white;
             border-radius: 10px;
+            height: 40%;
             h4{
                 font-weight: bold;
                 color: white;

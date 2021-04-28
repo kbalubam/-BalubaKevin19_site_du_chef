@@ -10054,25 +10054,68 @@ body header .carousel .deco {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10%;
+  position: relative;
+}
+.section1 .story_menulist .coinrougeleftdown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section1 .story_menulist .coinrougerightdown {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.section1 .story_menulist .coinrougeleftup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateZ(90deg);
+}
+.section1 .story_menulist .coinrougerightup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateZ(-90deg);
+}
+.section1 .story_menulist h1 {
+  font-family: "Courgette", cursive;
+  margin-top: 10%;
+}
+.section1 .story_menulist h1 span {
+  font-weight: bold;
+  color: #b12736;
 }
 .section1 .story_menulist p {
   text-align: center;
   width: 50%;
+  margin-top: 10%;
 }
 .section1 .story_menulist .menu_onglet ul {
   width: 20%;
+  font-family: "Courgette", cursive;
+  border-right: 1px solid grey;
 }
 .section1 .story_menulist .menu_onglet ul li {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid grey;
 }
 .section1 .story_menulist .menu_onglet ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
 }
 .section1 .story_menulist .menu_onglet ul li a i {
   font-size: 40px;
+  color: grey;
+}
+.section1 .story_menulist .menu_onglet .tab-content {
+  margin-top: 5%;
 }
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row {
   margin-bottom: 10px;
@@ -10093,9 +10136,6 @@ body header .carousel .deco {
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row .col-6 .imgronde img {
   width: 75%;
   border-radius: 50%;
-}
-.section1 .story_menulist .menu_onglet .tab-content .tab-pane .row .col-6 p span {
-  font-weight: bold;
 }
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row .col-6 .prix {
   background-color: grey;
@@ -10149,6 +10189,7 @@ body header .carousel .deco {
 .testimonials .client_testi h1 {
   color: white;
   font-family: "Courgette", cursive;
+  margin-top: 10%;
 }
 .testimonials .client_testi h1 span {
   color: #b12736;
@@ -10157,6 +10198,8 @@ body header .carousel .deco {
   display: flex;
   width: 80%;
   margin-top: 50px;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 .testimonials .manager .first_photo img {
   border-radius: 50%;
@@ -10164,6 +10207,7 @@ body header .carousel .deco {
 .testimonials .manager .first_presentation {
   border: 1px solid white;
   border-radius: 10px;
+  height: 40%;
 }
 .testimonials .manager .first_presentation h4 {
   font-weight: bold;
@@ -10198,9 +10242,10 @@ body header .carousel .deco {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  margin-top: 40px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .our_contact .info i {
   font-size: 30px;
@@ -10279,6 +10324,8 @@ footer .fond_rouge {
   background-color: white;
   border: 1px solid black;
   position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .book .book_table .coinrougeleftdown {
   position: absolute;
@@ -10360,6 +10407,9 @@ footer .fond_rouge {
 }
 .book .book_table .salade .olive {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .book .book_table .salade .olive .feta {
   position: relative;
@@ -10373,6 +10423,21 @@ footer .fond_rouge {
 }
 .book .book_table .salade .olive p:first-of-type {
   background-color: #b12736;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  bottom: 5%;
+  margin: 0;
+  width: 90%;
+  text-align: center;
+}
+.book .book_table .salade .olive p:first-of-type span {
+  color: white;
+  font-size: 20px;
+}
+.book .book_table .salade .olive h6 {
+  text-align: left;
+  width: 100%;
 }
 .book .book_table button {
   background-color: #b12736;
