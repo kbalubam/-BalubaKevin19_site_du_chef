@@ -10044,7 +10044,6 @@ body header .carousel .deco {
 }
 .section1 {
   background-image: url("../../../public/images/main_bg.jpg");
-  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10060,21 +10059,20 @@ body header .carousel .deco {
   text-align: center;
   width: 50%;
 }
-.section1 .story_menulist .menu_onglet .nav {
+.section1 .story_menulist .menu_onglet ul {
   width: 20%;
 }
-.section1 .story_menulist .menu_onglet .nav a {
+.section1 .story_menulist .menu_onglet ul li {
+  display: flex;
+  align-items: center;
+}
+.section1 .story_menulist .menu_onglet ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section1 .story_menulist .menu_onglet .nav a i {
+.section1 .story_menulist .menu_onglet ul li a i {
   font-size: 40px;
-}
-.section1 .story_menulist .menu_onglet .tab-content {
-  width: 80%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row {
   margin-bottom: 10px;
@@ -10085,18 +10083,15 @@ body header .carousel .deco {
   align-items: center;
 }
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row .col-6 .imgronde {
-  border: 1px solid black;
-  border-radius: 100%;
   padding: 2px;
   padding-right: 1px;
-  background-color: grey;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row .col-6 .imgronde img {
-  width: 90%;
+  width: 75%;
   border-radius: 50%;
 }
 .section1 .story_menulist .menu_onglet .tab-content .tab-pane .row .col-6 p span {
@@ -10235,7 +10230,160 @@ footer .deco2 {
 footer .fin {
   width: 80%;
   display: flex;
+  justify-content: space-evenly;
+}
+footer .fin .about_us {
+  width: 33%;
+}
+footer .fin .about_us h1 {
+  color: white;
+}
+footer .fin .about_us p {
+  color: white;
+}
+footer .fin .about_us .icones {
+  color: white;
+  width: 60%;
+  display: flex;
   justify-content: space-between;
+}
+footer .fin .about_us .icones i {
+  font-size: 20px;
+}
+footer .fin .instagram h1 {
+  color: white;
+}
+footer .fin .popular {
+  width: 33%;
+}
+footer .fin .popular h1 {
+  color: white;
+}
+footer .fond_rouge {
+  background-color: #b12736;
+  height: 100px;
+  width: 100%;
+}
+
+.book {
+  background-image: url("../../../public/images/main_bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.book .book_table {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+}
+.book .book_table .coinrougeleftdown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.book .book_table .coinrougerightdown {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.book .book_table .coinrougeleftup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateZ(90deg);
+}
+.book .book_table .coinrougerightup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateZ(-90deg);
+}
+.book .book_table .titre_blog {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.book .book_table .titre_blog h1 {
+  font-family: "Courgette", cursive;
+  text-align: center;
+}
+.book .book_table .titre_blog h1 span {
+  color: #b12736;
+}
+.book .book_table .formulaire {
+  width: 80%;
+  background-image: url("../../../public/images/book_table_bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.book .book_table .formulaire h5 {
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.book .book_table .formulaire form {
+  width: 80%;
+  margin-bottom: 5%;
+}
+.book .book_table .formulaire form .row .col-6 input {
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+}
+.book .book_table .formulaire form .row .col-6 select {
+  width: 100%;
+  border-radius: 8px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.book .book_table .formulaire button {
+  background-color: #b12736;
+  color: white;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 5%;
+  border: none;
+}
+.book .book_table .salade {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.book .book_table .salade .olive {
+  width: 40%;
+}
+.book .book_table .salade .olive .feta {
+  position: relative;
+  padding: 2px;
+  background-color: rgba(168, 163, 163, 0.904);
+  border-radius: 10px;
+}
+.book .book_table .salade .olive .feta img {
+  width: 100%;
+  border-radius: 10px;
+}
+.book .book_table .salade .olive p:first-of-type {
+  background-color: #b12736;
+}
+.book .book_table button {
+  background-color: #b12736;
+  color: white;
+  border: none;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 15%;
+  margin-top: 3%;
 }
 
 /*!

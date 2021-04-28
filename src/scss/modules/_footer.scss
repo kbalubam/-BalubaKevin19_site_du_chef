@@ -12,8 +12,42 @@ footer{
     .fin{
         width: 80%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        .about_us{
+            width: 33%;
+            h1{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            .icones{
+                color: white;
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+        .instagram{
+            h1{
+                color:white;
+            }
+        }
+        .popular{
+            width: 33%;
+            h1{
+                color: white;
+            }
+        }
         
+    }
+    .fond_rouge{
+        background-color: rgba(177,39,54,255);
+        height: 100px;
+        width: 100%;
     }
 
 }
