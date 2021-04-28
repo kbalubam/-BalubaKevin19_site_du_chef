@@ -1,0 +1,40 @@
+.our_contact{
+    background-image: url("../../../public/images/main_bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        margin-top: 40px;
+        
+        span{
+            color: rgba(177,39,54,255);
+        }
+    }
+    .info{
+        width: 35%;
+        background-color: rgba(177,39,54,255);
+        border: 1px solid rgba(177,39,54,255);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:15px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        i{
+            font-size: 30px;
+            color: white;
+        }
+        p{
+            width: 95%;
+            text-align: center;
+            color: white;
+           
+        }
+        p:first-of-type,p:nth-of-type(2){
+            border-bottom: 1px solid white;
+        }
+    }
+}

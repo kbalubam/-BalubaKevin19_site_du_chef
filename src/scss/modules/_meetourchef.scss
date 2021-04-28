@@ -1,0 +1,37 @@
+.meetourchef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    .titre_ourchef{
+        h1:first-of-type{
+            margin-bottom: 0;
+            text-align: center;
+            font-family: 'Courgette', cursive;
+            color: white;
+            span:first-of-type{
+                color: red; //mettre le bon rouge
+            }
+        }
+    }
+    .row{
+        .col-3{
+            position: relative;
+        }
+        img::before{
+            position: absolute;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            content: "zzzzz";
+            left:30%;            
+        }
+        
+        
+        p{
+            text-align: center;
+            color: white;
+        }
+        
+    }
+}

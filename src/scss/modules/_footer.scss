@@ -1,0 +1,19 @@
+footer{
+    background-image: url("../../../public/images/footer_background.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .deco2{
+        background-image: url("../../../public/images/footer_bottom_decoration_img.png");
+        width: 100%;
+        height: 10px;
+        background-color: black;
+    }
+    .fin{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+}
