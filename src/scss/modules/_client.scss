@@ -25,7 +25,7 @@
         display: flex;
         width: 80%;
         margin-top:50px;
-        align-items: flex-end;
+        
         justify-content: space-evenly;
         
         
@@ -52,5 +52,45 @@
                 color: white;
             }
         }
+    }
+}
+
+@media (min-width:320px) and (max-width:600px){
+    .testimonials{
+        .client_testi{
+                
+                h1{
+                   font-size: 30px;
+                    span{
+                        
+                        color:rgba(177,39,54,255);
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        .manager{
+            flex-direction: column;
+            align-items: center;
+            .first_photo{
+                img{
+
+                }
+            }
+            
+        }
+    }
+}        
+@media (min-width:600px) and (max-width:1007px){
+    .manager{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width:1007px){
+    .manager{
+        align-items: center;
+        justify-content: space-evenly;
     }
 }

@@ -10,13 +10,14 @@
             font-family: 'Courgette', cursive;
             color: white;
             span:first-of-type{
-                color: red; //mettre le bon rouge
+            color: red; //mettre le bon rouge
             }
         }
     }
-    .row{
+    .troupe{
+        display: flex;
         .col-3{
-            position: relative;
+            
         }
         img::before{
             position: absolute;
@@ -33,5 +34,19 @@
             color: white;
         }
         
+    }
+}
+
+
+@media (min-width:320px) and (max-width:600px){
+    .troupe{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width:600px) and (max-width:1007px){
+    .troupe{
+        flex-direction: column;
+        align-items: center;
     }
 }

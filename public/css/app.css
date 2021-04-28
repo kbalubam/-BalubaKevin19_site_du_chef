@@ -9929,14 +9929,18 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body header {
+  position: relative;
+}
 body header nav {
   background-color: black;
   opacity: 0.2;
-  position: fixed;
-  top: 0;
 }
 body header nav div div a {
   color: white;
+}
+body header nav div div a:hover {
+  background: red;
 }
 body header .carousel {
   position: relative;
@@ -9987,9 +9991,7 @@ body header .carousel .deco {
     filter: brightness(0.3);
   }
   .carousel .text_header {
-    width: 100%;
-    background-color: black;
-    margin: auto;
+    display: none;
   }
   .carousel .text_header .button_header {
     display: flex;
@@ -10157,10 +10159,10 @@ body header .carousel .deco {
 .meetourchef .titre_ourchef h1:first-of-type span:first-of-type {
   color: red;
 }
-.meetourchef .row .col-3 {
-  position: relative;
+.meetourchef .troupe {
+  display: flex;
 }
-.meetourchef .row img::before {
+.meetourchef .troupe img::before {
   position: absolute;
   background-color: red;
   width: 100px;
@@ -10168,11 +10170,23 @@ body header .carousel .deco {
   content: "zzzzz";
   left: 30%;
 }
-.meetourchef .row p {
+.meetourchef .troupe p {
   text-align: center;
   color: white;
 }
 
+@media (min-width: 320px) and (max-width: 600px) {
+  .troupe {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 1007px) {
+  .troupe {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -10198,7 +10212,6 @@ body header .carousel .deco {
   display: flex;
   width: 80%;
   margin-top: 50px;
-  align-items: flex-end;
   justify-content: space-evenly;
 }
 .testimonials .manager .first_photo img {
@@ -10220,6 +10233,33 @@ body header .carousel .deco {
   color: white;
 }
 
+@media (min-width: 320px) and (max-width: 600px) {
+  .testimonials .client_testi h1 {
+    font-size: 30px;
+  }
+  .testimonials .client_testi h1 span {
+    color: #b12736;
+  }
+  .testimonials .client_testi h1 p {
+    font-size: 10px;
+  }
+  .testimonials .manager {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 1007px) {
+  .manager {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1007px) {
+  .manager {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 .our_contact {
   background-image: url("../../../public/images/main_bg.jpg");
   display: flex;
@@ -10303,6 +10343,13 @@ footer .fin .popular {
 }
 footer .fin .popular h1 {
   color: white;
+}
+footer .fin .popular button {
+  color: white;
+  background-color: #b12736;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-bottom: 1%;
 }
 footer .fond_rouge {
   background-color: #b12736;
@@ -10451,6 +10498,12 @@ footer .fond_rouge {
   margin-top: 3%;
 }
 
+@media (min-width: 320px) and (max-width: 600px) {
+  .titre_blog h1 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+}
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
