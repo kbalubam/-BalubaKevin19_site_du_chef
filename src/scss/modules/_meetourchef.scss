@@ -4,6 +4,7 @@
     align-items: center;
     background-color: black;
     .titre_ourchef{
+        width: 100%;
         h1:first-of-type{
             margin-bottom: 0;
             text-align: center;
@@ -16,19 +17,25 @@
     }
     .troupe{
         display: flex;
-        .col-3{
-            
-        }
-        img::before{
-            position: absolute;
-            background-color: red;
-            width: 100px;
-            height: 100px;
-            content: "zzzzz";
-            left:30%;            
-        }
         
-        
+        .chef1{
+            position: relative;
+            .top1::before{
+                position: absolute;
+                bottom: 0;
+                height: 0;
+                background-color: red;
+                width: 100px;
+                height: 0;
+                content: "";
+                left:30%;            
+            }
+            .top1:hover::before{
+                height: 50%;
+                content: "CHEF"
+            }
+        }
+       
         p{
             text-align: center;
             color: white;

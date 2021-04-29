@@ -43,7 +43,7 @@ footer{
             h1{
                 color: white;
             }
-            button{
+            button  {
                 color: white;
                 background-color: rgba(177,39,54,255);
                 border: 1px solid white;
@@ -60,3 +60,140 @@ footer{
     }
 
 }
+
+@media (min-width:320px) and (max-width:600px){
+    .fin{
+        
+        .about_us{
+            
+            h1{
+               font-size:15px;
+            }
+            p{
+                font-size:10px;
+            }
+            i{
+                font-size:10px;
+            }
+
+           
+            
+        }
+        .instagram{
+            
+            
+            h1{
+                font-size:15px;
+             }
+             p{
+                 font-size:10px;
+             }
+             i{
+                 font-size:10px;
+             }
+        }
+        .popular{
+            
+            h1{
+                font-size:15px;
+             }
+             p{
+                 font-size:10px;
+             }
+             i{
+                 font-size:10px;
+             }
+        }        
+    }
+} 
+@media (min-width:600px) and (max-width:1007px){
+    .fin{
+        
+        .about_us{
+            
+            h1{
+               font-size:25px;
+            }
+            p{
+                font-size:20px;
+            }
+            i{
+                font-size:20px;
+            }
+
+           
+            
+        }
+        .instagram{
+            
+            
+            h1{
+                font-size:25px;
+             }
+             p{
+                 font-size:20px;
+             }
+             i{
+                 font-size:20;
+             }
+        }
+        .popular{
+            
+            h1{
+                font-size:25px;
+             }
+             p{
+                 font-size:20px;
+             }
+             i{
+                 font-size:20px;
+             }
+        }        
+    }
+}
+@media (min-width:1007px){
+    .fin{
+        
+        .about_us{
+            
+            h1{
+               font-size:35px;
+            }
+            p{
+                font-size:30px;
+            }
+            i{
+                font-size:30px;
+            }
+
+           
+            
+        }
+        .instagram{
+            
+            
+            h1{
+                font-size:35px;
+             }
+             p{
+                 font-size:30px;
+             }
+             i{
+                 font-size:30;
+             }
+        }
+        .popular{
+            
+            h1{
+                font-size:35px;
+             }
+             p{
+                 font-size:30px;
+             }
+             i{
+                 font-size:30px;
+             }
+        }        
+    }
+} 
+

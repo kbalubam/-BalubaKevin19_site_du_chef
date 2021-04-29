@@ -1,11 +1,14 @@
 body{
-    
+   
     header{
         position: relative;
+        // max-width: max-content;
         
         nav{
             background-color: black;
             opacity: .2;
+            padding:0;
+            position: fixed;
            div{
                 div{
                     a{

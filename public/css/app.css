@@ -9935,6 +9935,8 @@ body header {
 body header nav {
   background-color: black;
   opacity: 0.2;
+  padding: 0;
+  position: fixed;
 }
 body header nav div div a {
   color: white;
@@ -10150,6 +10152,9 @@ body header .carousel .deco {
   align-items: center;
   background-color: black;
 }
+.meetourchef .titre_ourchef {
+  width: 100%;
+}
 .meetourchef .titre_ourchef h1:first-of-type {
   margin-bottom: 0;
   text-align: center;
@@ -10162,13 +10167,22 @@ body header .carousel .deco {
 .meetourchef .troupe {
   display: flex;
 }
-.meetourchef .troupe img::before {
+.meetourchef .troupe .chef1 {
+  position: relative;
+}
+.meetourchef .troupe .chef1 .top1::before {
   position: absolute;
+  bottom: 0;
+  height: 0;
   background-color: red;
   width: 100px;
-  height: 100px;
-  content: "zzzzz";
+  height: 0;
+  content: "";
   left: 30%;
+}
+.meetourchef .troupe .chef1 .top1:hover::before {
+  height: 50%;
+  content: "CHEF";
 }
 .meetourchef .troupe p {
   text-align: center;
@@ -10357,6 +10371,93 @@ footer .fond_rouge {
   width: 100%;
 }
 
+@media (min-width: 320px) and (max-width: 600px) {
+  .fin .about_us h1 {
+    font-size: 15px;
+  }
+  .fin .about_us p {
+    font-size: 10px;
+  }
+  .fin .about_us i {
+    font-size: 10px;
+  }
+  .fin .instagram h1 {
+    font-size: 15px;
+  }
+  .fin .instagram p {
+    font-size: 10px;
+  }
+  .fin .instagram i {
+    font-size: 10px;
+  }
+  .fin .popular h1 {
+    font-size: 15px;
+  }
+  .fin .popular p {
+    font-size: 10px;
+  }
+  .fin .popular i {
+    font-size: 10px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1007px) {
+  .fin .about_us h1 {
+    font-size: 25px;
+  }
+  .fin .about_us p {
+    font-size: 20px;
+  }
+  .fin .about_us i {
+    font-size: 20px;
+  }
+  .fin .instagram h1 {
+    font-size: 25px;
+  }
+  .fin .instagram p {
+    font-size: 20px;
+  }
+  .fin .instagram i {
+    font-size: 20;
+  }
+  .fin .popular h1 {
+    font-size: 25px;
+  }
+  .fin .popular p {
+    font-size: 20px;
+  }
+  .fin .popular i {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1007px) {
+  .fin .about_us h1 {
+    font-size: 35px;
+  }
+  .fin .about_us p {
+    font-size: 30px;
+  }
+  .fin .about_us i {
+    font-size: 30px;
+  }
+  .fin .instagram h1 {
+    font-size: 35px;
+  }
+  .fin .instagram p {
+    font-size: 30px;
+  }
+  .fin .instagram i {
+    font-size: 30;
+  }
+  .fin .popular h1 {
+    font-size: 35px;
+  }
+  .fin .popular p {
+    font-size: 30px;
+  }
+  .fin .popular i {
+    font-size: 30px;
+  }
+}
 .book {
   background-image: url("../../../public/images/main_bg.jpg");
   display: flex;
@@ -10501,6 +10602,18 @@ footer .fond_rouge {
 @media (min-width: 320px) and (max-width: 600px) {
   .titre_blog h1 {
     font-size: 20px;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1007px) {
+  .titre_blog h1 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1008px) {
+  .titre_blog h1 {
+    font-size: 40px;
     margin-top: 5%;
   }
 }

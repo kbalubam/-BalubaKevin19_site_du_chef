@@ -166,3 +166,26 @@
         }
     }
 }
+
+@media (min-width:601px) and (max-width:1007px){
+    .titre_blog{
+        
+        h1{
+           font-size:20px;
+           margin-top:5%;
+            
+            
+        }
+    }
+}
+@media (min-width:1008px){
+    .titre_blog{
+        
+        h1{
+           font-size:40px;
+           margin-top:5%;
+            
+            
+        }
+    }
+}
